@@ -12,3 +12,5 @@ SmartStudio is an IoT solution for monitoring study rooms. The devices (Dongle b
 
 # GUI
 
+![My Image](documentation/gui.jpg)
+
