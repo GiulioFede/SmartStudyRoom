@@ -16,6 +16,10 @@ SmartStudyRoom is an IoT solution for monitoring study rooms. The devices (Dongl
   <img src="documentation/img3.jpg" width="400" />
 </p>
 
+# IoT Architecture
+
+![My Image](documentation/architecture.png)
+
 # GUI
 
 ![My Image](documentation/gui.PNG)
