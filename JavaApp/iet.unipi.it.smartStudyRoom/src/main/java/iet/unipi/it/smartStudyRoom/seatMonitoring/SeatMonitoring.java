@@ -34,14 +34,7 @@ public class SeatMonitoring extends CoapClient {
 			 		public void onLoad(CoapResponse response) {
 			 			String content = response.getResponseText();
 			 			System.out.println(content+ "   len="+ content.length());
-			 			///try {
-							//seat = (JSONObject)JSONValue.parseWithException(content);
-			 				seat = new JSONObject(content);
-						//} catch (ParseException e) {
-							//e.printStackTrace();
-						//}
-			 			//System.out.println("*******************seat info for seat "+(seat.getInt("idDevice")-4)+" -->"+ seat.getInt("state"));;
-			 			
+			 			seat = new JSONObject(content);
 			 			state[id-4]=seat.getInt("state");
 			 			my_window.changeStateTable(state);
 			 		}
