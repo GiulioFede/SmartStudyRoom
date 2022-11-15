@@ -42,68 +42,23 @@ public class SeatPanel extends JPanel {
 
 		setLayout(null);
 
-		/* 
-		image2 = new ImageIcon(getClass().getResource("images/table.jpg"));
-		label2 = new JLabel(image2);
-		Dimension size2 = label2.getPreferredSize();
-		label2.setBounds(150, 100, size2.width, size2.height);
-
-		JButton b = new JButton("Change Image");
 		
-		Dimension size3 = b.getPreferredSize();
-		b.setBounds(0, 0, 100, 100);
 
+		title= new JLabel("Building: 1, Room: 1");
+		title.setBounds(0, 0, 500, 400);
+		title.setFont (title.getFont ().deriveFont (40.0f));
 
-		image = new ImageIcon(getClass().getResource("images/table.jpg"));
-		label = new JLabel(image);
-		label.setLayout(null);
-		Dimension size = label.getPreferredSize();
-		label.setBounds(0, 0, 500, 500);
+		setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.BLACK));
 
-		label.add(label2);
+		ImageIcon table_image = new ImageIcon(getClass().getResource("images/table/5.png"));
+		label_table_image = new JLabel(table_image);
+		label_table_image.setBounds(0, 0, 500, 500);
 
-		label.add(b);
-		
-		add(label);
-		label.setLocation(130, 50);
-		b.setLocation(200, 50);
-	
-		
-		b.addActionListener(new ActionListener() { 
-			public void actionPerformed(ActionEvent e) { 
-			  System.out.println("ciao");
-			  
-			  //remove(label);
-			  label.remove(label2);
-			  
-			  image2 = new ImageIcon(getClass().getResource("images/rectangle.jpg"));
-			  label2 = new JLabel(image2);
-			  Dimension size2 = label2.getPreferredSize();
-			  label2.setBounds(150, 100, size2.width, size2.height);
-			  
-			  label.add(label2);
-			  revalidate();
-			  repaint();
-			} 
-		  } );
+		add(label_table_image);
+		add(title);
 
-		  */
-
-		  title= new JLabel("Building: 1, Room: 1");
-		  title.setBounds(0, 0, 500, 400);
-		  title.setFont (title.getFont ().deriveFont (40.0f));
-
-		  setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.BLACK));
-
-		  ImageIcon table_image = new ImageIcon(getClass().getResource("images/table/5.png"));
-		  label_table_image = new JLabel(table_image);
-		  label_table_image.setBounds(0, 0, 500, 500);
-
-		  add(label_table_image);
-		  add(title);
-
-		  label_table_image.setLocation(130, 50);
-		  title.setLocation(190, 500);
+		label_table_image.setLocation(130, 50);
+		title.setLocation(190, 500);
 
 	}
 
