@@ -48,33 +48,6 @@ public class MainFrame extends JFrame {
 		
 		setVisible(true);
 
-
-/* 
-	  JPanel panel = new JPanel();
-      getContentPane();
-      JLabel label = new JLabel("Demo Label!");
-      Dimension size = label.getPreferredSize();
-      label.setBounds(150, 100, size.width, size.height);
-      panel.setLayout(null);
-      panel.add(label);
-
-	  JLabel label2 = new JLabel("22222222222222222222!");
-      Dimension size2 = label2.getPreferredSize();
-      label2.setBounds(150, 100, size2.width, size2.height);
-
-      panel.add(label2);
-
-      panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-      add(panel);
-
-
-
-     
-
-      setSize(500, 300);
-      setVisible(true);
-	  */
 	}
 	
 	public void changeStateTable(int[] state) {
