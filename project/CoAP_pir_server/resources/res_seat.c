@@ -25,7 +25,8 @@ static void res_event_handler(void);
  	Definisco gli handler da chiamare per ogni tipo (GET, POST,...)	
  */
 EVENT_RESOURCE(res_seat,
-         "title=\"State of seat:\";rt=\"Text\"",
+	 //core link format
+         "title=\"State of seat:\";rt=\"Text\"; ct=50;", //ct=50 means application/json
          res_get_handler, //viene chiamata ogni volta che si fa la GET sulla risorsa
          NULL, 
          NULL, 
